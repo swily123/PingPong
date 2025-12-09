@@ -283,13 +283,14 @@ MonoBehaviour:
   _zones:
   - {fileID: 968017948}
   - {fileID: 380995200}
-  _height: 0.5
+  _height: 0.2
   _ball: {fileID: 1758311845}
   _startPoint: {fileID: 132073307}
   _playerRacket: {fileID: 1120989975}
   _racketAreaSize: {x: 0.54, y: 0.24}
   _racketArea: {fileID: 1451285582}
   _sensitivity: 0.025
+  _ballCollision: {fileID: 8705497067065974360}
   _predictor: {fileID: 1087373732}
   _enemyRacket: {fileID: 2065969508}
 --- !u!1 &631489782
@@ -707,7 +708,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1772,8 +1773,8 @@ GameObject:
   - component: {fileID: 8705497067065974357}
   - component: {fileID: 7407112242801574116}
   - component: {fileID: 8705497067065974358}
-  - component: {fileID: 8705497067065974360}
   - component: {fileID: 8705497067065974359}
+  - component: {fileID: 8705497067065974360}
   m_Layer: 0
   m_Name: Racket - Player
   m_TagString: Untagged
@@ -1855,7 +1856,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7470520449327012087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1f67a4d22e718e45bd68254f8e5b738, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c18b70d20e84cdea5a247ab1f1587c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &8891792826897374663

@@ -11,7 +11,7 @@ public class Predictor : MonoBehaviour
     [SerializeField] private float _step = 0.02f;
     [SerializeField] private int _count = 50;
     [SerializeField] private Transform _endPoint;
-    [SerializeField] private Transform _phantomPrefab;
+    //[SerializeField] private Transform _phantomPrefab;
     
     private Scene _scene;
     private PhysicsScene _simulationScene;
@@ -23,7 +23,7 @@ public class Predictor : MonoBehaviour
         _simulationScene = _scene.GetPhysicsScene();
         
         _simulatingBody = Instantiate(_ball);
-        //_simulatingBody.GetComponent<MeshRenderer>().enabled = false;
+        _simulatingBody.GetComponent<MeshRenderer>().enabled = false;
         SceneManager.MoveGameObjectToScene(_simulatingBody.gameObject, _scene);
         
         var table = Instantiate(_table, _table.transform.position, _table.transform.rotation);
@@ -45,7 +45,7 @@ public class Predictor : MonoBehaviour
         {
             _simulationScene.Simulate(_step);
             time += _step;
-            var phantom = Instantiate(_phantomPrefab, _simulatingBody.position, Quaternion.identity);
+            //var phantom = Instantiate(_phantomPrefab, _simulatingBody.position, Quaternion.identity);
             
             if (_simulatingBody.position.z < _endPoint.position.z)
             {
