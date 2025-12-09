@@ -21,4 +21,9 @@ public class Ball : MonoBehaviour
     {
         return _transform.position;
     }
+
+    public void SetPosition(Vector3 point)
+    {
+        _transform.position = point;
+    }
 }
